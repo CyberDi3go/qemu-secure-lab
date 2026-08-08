@@ -242,6 +242,13 @@ Si se tocó la línea de kernel, hay que reiniciar para completar la reversión.
 
 ---
 
+## Créditos
+
+Desarrollado con asistencia de Claude (Anthropic). Diseño, decisiones de
+arquitectura y pruebas en hardware real por [CyberDi3go](https://github.com/CyberDi3go).
+
+---
+
 ## Aviso de responsabilidad
 
 Proyecto personal, publicado tal cual, sin garantía y sin auditoría de
@@ -488,6 +495,13 @@ line, then removes the lab packages. It never deletes `.qcow2` disks, ISOs or
 VM definitions. Use `--soft` to keep QEMU installed.
 
 Reboot to finish the revert if the kernel command line was modified.
+
+---
+
+## Credits
+
+Built with assistance from Claude (Anthropic). Design, architecture decisions
+and testing on real hardware by [CyberDi3go](https://github.com/CyberDi3go).
 
 ---
 
