@@ -11,7 +11,7 @@ rules are identical.
 
 | | Script | Redes / Networks |
 |---|---|---|
-| Español | `qemu-secure-lab-1.0.0.sh` | `lab-libre` · `lab-nat` · `lab-aislada` |
+| Español | `qemu-secure-lab-1.0.0-ES.sh` | `lab-libre` · `lab-nat` · `lab-aislada` |
 | English | `qemu-secure-lab-1.0.0-EN.sh` | `lab-open` · `lab-nat` · `lab-isolated` |
 
 > **No instales las dos.** Comparten fichero de estado, tabla nftables, helper y
@@ -71,8 +71,8 @@ aislamiento y salida a internet controlada. Todo reversible.
 ## Instalación
 
 ```bash
-chmod +x qemu-secure-lab-1.0.0.sh
-./qemu-secure-lab-1.0.0.sh
+chmod +x qemu-secure-lab-1.0.0-ES.sh
+./qemu-secure-lab-1.0.0-ES.sh
 ```
 
 Se ejecuta varias veces. Cada pasada avanza desde donde quedó la anterior y no
@@ -217,7 +217,7 @@ Casi siempre es AppArmor bloqueando una ruta nueva (USB, carpeta compartida,
 un disco fuera de `~/VMs/QEMU`, instantáneas externas).
 
 ```bash
-./qemu-secure-lab-1.0.0.sh complain
+./qemu-secure-lab-1.0.0-ES.sh complain
 sudo journalctl -k --since '-5 min' \
   | grep -E 'apparmor="(DENIED|ALLOWED)"' | grep qemu-lab
 ```
@@ -231,7 +231,7 @@ Añade las rutas legítimas al final de
 ## Desinstalación
 
 ```bash
-./qemu-secure-lab-1.0.0.sh uninstall
+./qemu-secure-lab-1.0.0-ES.sh uninstall
 ```
 
 Revierte cortafuegos, redes, pools, ACL, perfil AppArmor y línea de kernel, y
