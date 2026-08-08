@@ -65,10 +65,10 @@ cada persona le dé es responsabilidad exclusiva de esa persona.
 
 ## Para qué sirve
 
-- Prácticas de ciclos de ciberseguridad y administración de sistemas
+- Formación en ciberseguridad y administración de sistemas
 - Máquinas vulnerables de laboratorio (Metasploitable, DVWA y similares)
-- Analizar comportamiento de software sin que toque la red de casa
-- Aislar VMs de la LAN, de Tailscale, de ZeroTier y del propio host
+- Analizar comportamiento de software sin que alcance la red local
+- Aislar VMs de la LAN, de las VPN de malla y del propio host
 
 **No sirve** para detonar malware real y dirigido. Ver
 [De qué no protege](#de-qué-no-protege).
@@ -336,10 +336,10 @@ so. How any given person uses it is that person's sole responsibility.
 
 ## What it is for
 
-- Cybersecurity and sysadmin coursework
+- Cybersecurity and sysadmin training
 - Deliberately vulnerable lab machines (Metasploitable, DVWA and the like)
-- Observing software behaviour without letting it reach your home network
-- Keeping VMs away from the LAN, Tailscale, ZeroTier and the host itself
+- Observing software behaviour without letting it reach the local network
+- Keeping VMs away from the LAN, mesh VPNs and the host itself
 
 **Not** for detonating real, targeted malware. See
 [What it does not protect against](#what-it-does-not-protect-against).
