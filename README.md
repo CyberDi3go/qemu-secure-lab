@@ -21,6 +21,12 @@ rules are identical.
 > helper and AppArmor profile. The English edition aborts if it finds the
 > Spanish one.
 
+> **Sin garantía. Software publicado tal cual, bajo tu propia responsabilidad.**
+> Ver [aviso de responsabilidad](#aviso-de-responsabilidad).
+>
+> **No warranty. Provided as is, use at your own risk.**
+> See [disclaimer](#disclaimer).
+
 ---
 
 <a name="español"></a>
@@ -32,6 +38,10 @@ Laboratorio QEMU/KVM endurecido para Arch Linux, en un solo script.
 Levanta un entorno de virtualización para prácticas de seguridad: QEMU sin
 privilegios, perfil AppArmor propio, tres redes con distinto grado de
 aislamiento y salida a internet controlada. Todo reversible.
+
+> **Sin garantía de ningún tipo.** Modifica el cortafuegos, la línea de arranque
+> del kernel y la configuración de libvirt. Léete el
+> [aviso de responsabilidad](#aviso-de-responsabilidad) antes de ejecutarlo.
 
 ---
 
@@ -232,6 +242,34 @@ Si se tocó la línea de kernel, hay que reiniciar para completar la reversión.
 
 ---
 
+## Aviso de responsabilidad
+
+Proyecto personal, publicado tal cual, sin garantía y sin auditoría de
+seguridad independiente.
+
+- **Lo ejecutas bajo tu responsabilidad.** El autor no responde de daños en el
+  sistema, pérdida de datos, caídas de red ni de ninguna consecuencia derivada
+  de usar este script.
+- **Toca partes críticas del sistema**: reglas de cortafuegos, línea de arranque
+  del kernel, configuración de libvirt, permisos del directorio personal y
+  perfiles de AppArmor. Lee el código antes de lanzarlo y haz copia de lo que
+  te importe.
+- **El aislamiento no es absoluto.** Los escapes de máquina virtual existen. El
+  autor no responde de un compromiso del equipo anfitrión, de la red local o de
+  terceros a raíz de software ejecutado dentro de una VM.
+- **No lo uses para malware real y dirigido.** Eso exige hardware dedicado y
+  desconectado. Ver [De qué no protege](#de-qué-no-protege).
+- **Cúmplelo todo dentro de la ley.** Ejecuta software y pruebas ofensivas solo
+  sobre sistemas de tu propiedad o con autorización expresa por escrito. La
+  tenencia, distribución y ejecución de código malicioso están reguladas y
+  varían según el país. El uso que le des es responsabilidad tuya.
+- **Sin soporte ni compromiso de mantenimiento.** Los informes de fallo se
+  agradecen, pero no hay garantía de respuesta ni de corrección.
+
+Usar este script implica aceptar lo anterior.
+
+---
+
 ## Licencia
 
 MIT
@@ -247,6 +285,12 @@ Hardened QEMU/KVM lab for Arch Linux, in a single script.
 Sets up a virtualisation environment for security practice: unprivileged QEMU,
 a dedicated AppArmor profile, three networks with different isolation levels
 and controlled internet access. Fully reversible.
+
+> Script output and inline comments are in Spanish.
+
+> **No warranty of any kind.** It modifies your firewall, kernel command line
+> and libvirt configuration. Read the [disclaimer](#disclaimer) before running
+> it.
 
 ---
 
@@ -444,6 +488,33 @@ line, then removes the lab packages. It never deletes `.qcow2` disks, ISOs or
 VM definitions. Use `--soft` to keep QEMU installed.
 
 Reboot to finish the revert if the kernel command line was modified.
+
+---
+
+## Disclaimer
+
+Personal project, published as is, with no warranty and no independent security
+audit.
+
+- **You run it at your own risk.** The author is not liable for system damage,
+  data loss, network outages or any other consequence of using this script.
+- **It touches critical parts of the system**: firewall rules, the kernel
+  command line, libvirt configuration, home directory permissions and AppArmor
+  profiles. Read the code before running it and back up anything you care about.
+- **Isolation is not absolute.** VM escapes exist. The author is not liable for
+  compromise of the host, the local network or third parties resulting from
+  software run inside a VM.
+- **Do not use it for real, targeted malware.** That calls for dedicated,
+  disconnected hardware. See
+  [What it does not protect against](#what-it-does-not-protect-against).
+- **Stay within the law.** Only run software and offensive testing against
+  systems you own or have explicit written authorisation for. Possession,
+  distribution and execution of malicious code are regulated and the rules vary
+  by country. How you use this tool is your responsibility.
+- **No support and no maintenance commitment.** Bug reports are welcome, but
+  there is no guarantee of a reply or a fix.
+
+Using this script means accepting the above.
 
 ---
 
