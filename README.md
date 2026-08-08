@@ -21,11 +21,13 @@ rules are identical.
 > helper and AppArmor profile. The English edition aborts if it finds the
 > Spanish one.
 
-> **Sin garantía. Software publicado tal cual, bajo tu propia responsabilidad.**
-> Ver [aviso de responsabilidad](#aviso-de-responsabilidad).
+> **Herramienta defensiva, publicada con fines educativos. Sin garantía y bajo
+> tu propia responsabilidad.** Ver [propósito y uso previsto](#propósito-y-uso-previsto)
+> y [aviso de responsabilidad](#aviso-de-responsabilidad).
 >
-> **No warranty. Provided as is, use at your own risk.**
-> See [disclaimer](#disclaimer).
+> **Defensive tool, published for educational purposes. No warranty, use at
+> your own risk.** See [purpose and intended use](#purpose-and-intended-use)
+> and [disclaimer](#disclaimer).
 
 ---
 
@@ -42,6 +44,22 @@ aislamiento y salida a internet controlada. Todo reversible.
 > **Sin garantía de ningún tipo.** Modifica el cortafuegos, la línea de arranque
 > del kernel y la configuración de libvirt. Léete el
 > [aviso de responsabilidad](#aviso-de-responsabilidad) antes de ejecutarlo.
+
+---
+
+## Propósito y uso previsto
+
+Esta es una herramienta **defensiva**. Su única función es contener máquinas
+virtuales: aislarlas del equipo anfitrión y de la red local. No contiene
+exploits, ni malware, ni herramientas ofensivas, y no explota ninguna
+vulnerabilidad.
+
+Se publica con **fines educativos y de defensa**: prácticas de formación,
+laboratorios de administración de sistemas y análisis de comportamiento en
+entorno controlado.
+
+No está diseñada para atacar sistemas ajenos ni facilita hacerlo. El uso que
+cada persona le dé es responsabilidad exclusiva de esa persona.
 
 ---
 
@@ -298,6 +316,21 @@ and controlled internet access. Fully reversible.
 > **No warranty of any kind.** It modifies your firewall, kernel command line
 > and libvirt configuration. Read the [disclaimer](#disclaimer) before running
 > it.
+
+---
+
+## Purpose and intended use
+
+This is a **defensive** tool. Its only job is to contain virtual machines:
+isolating them from the host and from the local network. It contains no
+exploits, no malware and no offensive tooling, and it exploits no
+vulnerability.
+
+It is published for **educational and defensive purposes**: training exercises,
+sysadmin labs and behavioural analysis in a controlled environment.
+
+It is not designed to attack third-party systems and does not facilitate doing
+so. How any given person uses it is that person's sole responsibility.
 
 ---
 
