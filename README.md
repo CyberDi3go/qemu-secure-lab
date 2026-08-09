@@ -11,8 +11,8 @@ rules are identical.
 
 | | Script | Redes / Networks |
 |---|---|---|
-| Español | `qemu-secure-lab-1.0.0-ES.sh` | `lab-libre` · `lab-nat` · `lab-aislada` |
-| English | `qemu-secure-lab-1.0.0-EN.sh` | `lab-open` · `lab-nat` · `lab-isolated` |
+| Español | `qemu-secure-lab-1.0.1-ES.sh` | `lab-libre` · `lab-nat` · `lab-aislada` |
+| English | `qemu-secure-lab-1.0.1-EN.sh` | `lab-open` · `lab-nat` · `lab-isolated` |
 
 > **No instales las dos.** Comparten fichero de estado, tabla nftables, helper y
 > perfil AppArmor. La edición inglesa aborta si detecta la española.
@@ -89,8 +89,8 @@ cada persona le dé es responsabilidad exclusiva de esa persona.
 ## Instalación
 
 ```bash
-chmod +x qemu-secure-lab-1.0.0-ES.sh
-./qemu-secure-lab-1.0.0-ES.sh
+chmod +x qemu-secure-lab-1.0.1-ES.sh
+./qemu-secure-lab-1.0.1-ES.sh
 ```
 
 Se ejecuta varias veces. Cada pasada avanza desde donde quedó la anterior y no
@@ -235,7 +235,7 @@ Casi siempre es AppArmor bloqueando una ruta nueva (USB, carpeta compartida,
 un disco fuera de `~/VMs/QEMU`, instantáneas externas).
 
 ```bash
-./qemu-secure-lab-1.0.0-ES.sh complain
+./qemu-secure-lab-1.0.1-ES.sh complain
 sudo journalctl -k --since '-5 min' \
   | grep -E 'apparmor="(DENIED|ALLOWED)"' | grep qemu-lab
 ```
@@ -249,7 +249,7 @@ Añade las rutas legítimas al final de
 ## Desinstalación
 
 ```bash
-./qemu-secure-lab-1.0.0-ES.sh uninstall
+./qemu-secure-lab-1.0.1-ES.sh uninstall
 ```
 
 Revierte cortafuegos, redes, pools, ACL, perfil AppArmor y línea de kernel, y
@@ -360,8 +360,8 @@ so. How any given person uses it is that person's sole responsibility.
 ## Install
 
 ```bash
-chmod +x qemu-secure-lab-1.0.0-EN.sh
-./qemu-secure-lab-1.0.0-EN.sh
+chmod +x qemu-secure-lab-1.0.1-EN.sh
+./qemu-secure-lab-1.0.1-EN.sh
 ```
 
 Run it more than once. Each pass picks up where the last one stopped and never
@@ -506,7 +506,7 @@ It is almost always AppArmor blocking a new path (USB, shared folder, a disk
 outside `~/VMs/QEMU`, external snapshots).
 
 ```bash
-./qemu-secure-lab-1.0.0-EN.sh complain
+./qemu-secure-lab-1.0.1-EN.sh complain
 sudo journalctl -k --since '-5 min' \
   | grep -E 'apparmor="(DENIED|ALLOWED)"' | grep qemu-lab
 ```
@@ -520,7 +520,7 @@ Add the legitimate paths to the end of
 ## Uninstall
 
 ```bash
-./qemu-secure-lab-1.0.0-EN.sh uninstall
+./qemu-secure-lab-1.0.1-EN.sh uninstall
 ```
 
 Reverts firewall, networks, pools, ACLs, AppArmor profile and kernel command
