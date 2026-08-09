@@ -1,30 +1,35 @@
 # qemu-secure-lab
 
-**Laboratorio QEMU/KVM endurecido para Arch Linux · Hardened QEMU/KVM lab for Arch Linux**
+Laboratorio QEMU/KVM endurecido para Arch Linux
+Hardened QEMU/KVM lab for Arch Linux
 
-[Español](#español) · [English](#english)
-
-Dos ediciones del mismo script. Cambia el idioma de los mensajes y el nombre de
-las redes; las reglas son idénticas.
-Two editions of the same script. Message language and network names differ; the
-rules are identical.
-
-| | Script | Redes / Networks |
+| Script | Idioma / Language | Redes / Networks |
 |---|---|---|
-| Español | `qemu-secure-lab-1.0.1-ES.sh` | `lab-libre` · `lab-nat` · `lab-aislada` |
-| English | `qemu-secure-lab-1.0.1-EN.sh` | `lab-open` · `lab-nat` · `lab-isolated` |
+| [`qemu-secure-lab-1.0.1-ES.sh`](qemu-secure-lab-1.0.1-ES.sh) | Español | `lab-libre` · `lab-nat` · `lab-aislada` |
+| [`qemu-secure-lab-1.0.1-EN.sh`](qemu-secure-lab-1.0.1-EN.sh) | English | `lab-open` · `lab-nat` · `lab-isolated` |
 
-> **No instales las dos.** Comparten fichero de estado, tabla nftables, helper y
-> perfil AppArmor. La edición inglesa aborta si detecta la española.
->
+### [Español](#español)
+
+Dos ediciones del mismo script. Cambian los mensajes y el nombre de las redes;
+las reglas son idénticas.
+
+> **No instales las dos.** Comparten fichero de estado, tabla nftables, helper
+> y perfil AppArmor. La edición inglesa aborta si detecta la española.
+
+> **Herramienta defensiva, publicada con fines educativos. Sin garantía y bajo
+> tu propia responsabilidad.** Ver
+> [propósito y uso previsto](#propósito-y-uso-previsto) y
+> [aviso de responsabilidad](#aviso-de-responsabilidad).
+
+### [English](#english)
+
+Two editions of the same script. Messages and network names differ; the rules
+are identical.
+
 > **Do not install both.** They share the same state file, nftables table,
 > helper and AppArmor profile. The English edition aborts if it finds the
 > Spanish one.
 
-> **Herramienta defensiva, publicada con fines educativos. Sin garantía y bajo
-> tu propia responsabilidad.** Ver [propósito y uso previsto](#propósito-y-uso-previsto)
-> y [aviso de responsabilidad](#aviso-de-responsabilidad).
->
 > **Defensive tool, published for educational purposes. No warranty, use at
 > your own risk.** See [purpose and intended use](#purpose-and-intended-use)
 > and [disclaimer](#disclaimer).
